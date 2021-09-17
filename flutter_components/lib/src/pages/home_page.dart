@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/src/providers/menu_provider.dart';
+import 'package:flutter_components/src/utils/icon_string_utils.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,32 +20,33 @@ class HomePage extends StatelessWidget {
       future: menuProvider.loadData(),
       initialData: const [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
-        print(snapshot.data);
         return ListView(
-          children: _createListItems(snapshot.data),
+          children: _createListItems(snapshot.data, context),
         );
       },
     );
   }
 
-  List<Widget> _createListItems(List<dynamic>? data) {
+  List<Widget> _createListItems(List<dynamic>? data, BuildContext context) {
     final List<Widget> options = [];
 
     for (var element in data!) {
       final temp = ListTile(
-        leading: const Icon(Icons.text_fields),
+        leading: getIcon(element["icon"]),
         title: Text(element['texto']),
         trailing: const Icon(
           Icons.keyboard_arrow_right,
-          color: Colors.black,
+          color: Colors.blue,
         ),
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, element["ruta"]);
+        },
       );
 
       options
         ..add(temp)
         ..add(const Divider(
-          color: Colors.black,
+          color: Colors.blue,
         ));
     }
     return options;
