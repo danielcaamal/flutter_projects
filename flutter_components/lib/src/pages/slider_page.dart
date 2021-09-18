@@ -54,11 +54,6 @@ class _SliderPageState extends State<SliderPage> {
   }
 
   Widget _createCheckbox() {
-    /*return Checkbox(
-        value: _checkValue,
-        shape: ,
-        onChanged: (value) => setState(() => _checkValue = value!));
-  }*/
     return CheckboxListTile(
         title: const Text("Lock Slider"),
         value: _checkValue,
