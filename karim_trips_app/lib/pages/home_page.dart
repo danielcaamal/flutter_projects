@@ -30,11 +30,6 @@ class _HomePageState extends State<HomePage> {
           const HeaderAppBar(),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
     );
   }
 }

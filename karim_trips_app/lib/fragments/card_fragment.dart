@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:karim_trips_app/fragments/floating_action_icon.dart';
 
 class CardList extends StatelessWidget {
   const CardList({Key? key}) : super(key: key);
@@ -48,6 +49,9 @@ class CardImage extends StatelessWidget {
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
 
-    return card;
+    return Stack(
+      alignment: const Alignment(0.9, 1.1),
+      children: [card, const FloatingActionIcon()],
+    );
   }
 }
