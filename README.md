@@ -27,4 +27,12 @@ All my flutter projects, every project contains examples of:
     - InkWell
     - Stack
     - Material and Cupertino
-    
+4. flutter-movies
+    - REST Consume
+    - JSON to Models
+    - PageViews
+    - Apikeys
+    - Providers
+    - Streams
+    - Infinite Horizontal Scroll
+    - Search Delegate
