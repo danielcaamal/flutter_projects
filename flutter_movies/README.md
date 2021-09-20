@@ -1,5 +1,10 @@
 # flutter_movies
-A flutter project (Layout) that implements certain Widgets to doing a great visual mobile app.
+A flutter movie app that implements:
+
+- Export
+- Card Swiper
+- Sliders
+
 
 <p align="center">
     <img src="./flutter_trips_app.jpg"
