@@ -4,6 +4,8 @@ A flutter movie app that implements:
 - Export
 - Card Swiper
 - Sliders
+- Slivers, SliverAppBar
+- TextTheme
 
 
 <p align="center">
