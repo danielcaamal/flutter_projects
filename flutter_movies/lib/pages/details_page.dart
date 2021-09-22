@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_movies/widgets/widgets.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({Key? key}) : super(key: key);
@@ -11,7 +12,13 @@ class DetailsPage extends StatelessWidget {
         body: CustomScrollView(
       slivers: [
         const _CustomAppBar(),
-        SliverList(delegate: SliverChildListDelegate([const _PosterAndTitle()]))
+        SliverList(
+            delegate: SliverChildListDelegate(const [
+          _PosterAndTitle(),
+          _Overview(),
+          _Overview(),
+          CastingCards(),
+        ]))
       ],
     ));
   }
@@ -32,6 +39,7 @@ class _CustomAppBar extends StatelessWidget {
         titlePadding: const EdgeInsets.all(0),
         title: Container(
             alignment: Alignment.bottomCenter,
+            padding: const EdgeInsets.only(bottom: 10),
             width: double.infinity,
             color: Colors.black12,
             child: const Text(
@@ -101,6 +109,22 @@ class _PosterAndTitle extends StatelessWidget {
             ],
           )
         ],
+      ),
+    );
+  }
+}
+
+class _Overview extends StatelessWidget {
+  const _Overview({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10.0),
+      child: Text(
+        'Do quis culpa laborum et ullamco irure labore aliquip nisi pariatur cillum. Magna amet consectetur aliqua consequat. Elit et aliquip eu Lorem pariatur laboris proident ex do. Officia consectetur aute anim nostrud ullamco aute. Dolore qui aute consectetur culpa sunt aute anim aliquip ullamco ut tempor.',
+        textAlign: TextAlign.justify,
+        style: Theme.of(context).textTheme.subtitle1,
       ),
     );
   }
