@@ -6,6 +6,7 @@ A flutter movie app that implements:
 - Sliders
 - Slivers, SliverAppBar
 - TextTheme
+- Providers, MultiProviders
 
 
 <p align="center">
