@@ -7,6 +7,7 @@ A flutter movie app that implements:
 - Slivers, SliverAppBar
 - TextTheme
 - Providers, MultiProviders
+- Memory Persistance
 
 
 <p align="center">
