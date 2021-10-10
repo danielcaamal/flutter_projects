@@ -36,3 +36,4 @@ All my flutter projects, every project contains examples of:
     - Streams
     - Infinite Horizontal Scroll
     - Search Delegate
+    - Debouncers
