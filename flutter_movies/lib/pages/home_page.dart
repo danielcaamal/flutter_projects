@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_movies/delegates/search_delegate.dart';
 import 'package:flutter_movies/providers/movie_provider.dart';
 import 'package:flutter_movies/widgets/widgets.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +16,10 @@ class HomePage extends StatelessWidget {
         title: const Center(child: Text("Movies on cinema")),
         elevation: 0,
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search_outlined))
+          IconButton(
+              onPressed: () =>
+                  showSearch(context: context, delegate: MovieSearchDelegate()),
+              icon: const Icon(Icons.search_outlined))
         ],
       ),
       body: SingleChildScrollView(
