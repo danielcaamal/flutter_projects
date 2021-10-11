@@ -37,3 +37,9 @@ All my flutter projects, every project contains examples of:
     - Infinite Horizontal Scroll
     - Search Delegate
     - Debouncers
+5. flutter-designs
+    - Safe Area
+    - Blur
+    - BottomNavigation Bar
+    - Status Bar
+    - Table, TableRow
