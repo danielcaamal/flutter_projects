@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_qr_reader/pages/pages.dart';
+import 'package:flutter_qr_reader/providers/db_provider.dart';
+import 'package:flutter_qr_reader/providers/ui_provider.dart';
 import 'package:flutter_qr_reader/widgets/scan_button.dart';
 import 'package:flutter_qr_reader/widgets/custom_bar_navigation.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -29,7 +32,15 @@ class _HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const currentIndex = 0;
+    final uIProvider = Provider.of<UIProvider>(context);
+    final currentIndex = uIProvider.selectedMenuOpt;
+
+    // TODO:
+    final tempScan = ScanModel(value: 'https://holamundo');
+    DBProvider.db.insertScan(tempScan);
+    DBProvider.db.getScanById(13);
+    DBProvider.db.getScansByType('http').then((value) => print(value));
+
     switch (currentIndex) {
       case 0:
         return const MapsPage();
