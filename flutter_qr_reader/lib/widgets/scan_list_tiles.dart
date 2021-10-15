@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_qr_reader/providers/scan_provider.dart';
+import 'package:flutter_qr_reader/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 class ScanListTiles extends StatelessWidget {
@@ -34,7 +35,7 @@ class ScanListTiles extends StatelessWidget {
                 Icons.keyboard_arrow_right_outlined,
                 color: Theme.of(context).primaryColor,
               ),
-              onTap: () => print("ON TAP EVENT"),
+              onTap: () => launchURL(context, scans[index]),
             ),
           );
         });
