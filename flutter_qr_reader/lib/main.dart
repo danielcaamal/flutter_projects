@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         initialRoute: 'home',
         routes: {
           'home': (_) => const HomePage(),
-          'map': (_) => const MapPage(),
+          'map': (_) => MapPage(),
         },
         theme: ThemeData(
             primaryColor: Colors.deepPurple,
