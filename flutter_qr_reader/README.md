@@ -1,16 +1,25 @@
 # flutter_qr_reader
 
-A new Flutter project.
+A flutter qr_reader app that implements:
 
-## Getting Started
+- Launch Camera
+- CRUD SQLite
+- Google Maps
+- Map SDK
+- API Keys
+- Marks
+- Launch URLs
+- Providers
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+    <img src="./qr_app_1.png"
+        alt="Example Flutter app"
+        style="float: left; margin-right: 10px; height: 500px"/>
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+    <img src="./qr_app_2.png"
+        alt="Example Flutter app"
+        style="float: left; margin-right: 10px; height: 500px"/>
+</p>
