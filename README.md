@@ -43,3 +43,13 @@ All my flutter projects, every project contains examples of:
     - BottomNavigation Bar
     - Status Bar
     - Table, TableRow
+6. flutter-qr-reader
+    - Read QR
+    - Launch Camera
+    - CRUD SQLite
+    - Google Maps
+    - Map SDK
+    - API Keys
+    - Marks
+    - Launch URLs
+    - Providers
