@@ -8,6 +8,7 @@ class ProductsService extends ChangeNotifier {
   final String _baseURL = 'flutter-projects-867c6-default-rtdb.firebaseio.com';
   final List<Product> products = [];
   bool isLoading = true;
+  late Product selectedProduct;
 
   // FETCH PRODUCTS
   ProductsService() {
@@ -30,7 +31,7 @@ class ProductsService extends ChangeNotifier {
 
     isLoading = false;
     notifyListeners();
-
+    // print(products);
     return products;
   }
 }

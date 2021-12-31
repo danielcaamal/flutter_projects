@@ -30,9 +30,7 @@ class ProductCard extends StatelessWidget {
                 child: _PriceTag(
                   price: product.price,
                 )),
-
-            // TODO: Conditional
-            product.available
+            !product.available
                 ? const Positioned(top: 0, left: 0, child: _NotAvailable())
                 : Container(),
           ],

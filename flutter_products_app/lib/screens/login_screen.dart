@@ -56,7 +56,6 @@ class _LoginForm extends StatelessWidget {
     return Form(
       key: loginForm.formKey,
       autovalidateMode: AutovalidateMode.onUserInteraction,
-      // TODO: Keep the key
       child: Column(
         children: [
           TextFormField(
@@ -98,7 +97,7 @@ class _LoginForm extends StatelessWidget {
                     FocusScope.of(context).unfocus();
                     if (!loginForm.isValidForm()) return;
                     loginForm.isLoading = true;
-                    await Future.delayed(Duration(seconds: 2), () {});
+                    await Future.delayed(const Duration(seconds: 2), () {});
                     loginForm.isLoading = false;
                     Navigator.pushReplacementNamed(context, 'Home');
                   },
