@@ -1,3 +1,4 @@
+
 class Product {
   Product({
     required this.available,
@@ -20,12 +21,14 @@ class Product {
         price: json["price"],
       );
 
-  Map<String, dynamic> toJson() => {
-        "available": available,
-        "name": name,
-        "picture": picture,
-        "price": price,
-      };
+  Map<String, dynamic> toJson() {
+    return {
+      "available": available,
+      "name": name,
+      "picture": picture,
+      "price": price,
+    };
+  }
 
   @override
   String toString() {
